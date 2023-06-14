@@ -16,6 +16,7 @@ from langchain.utilities import WikipediaAPIWrapper
 # Initialize the Flask app
 from flask import Flask
 app = Flask(__name__)
+flask_app.run(host="0.0.0.0", port=8000)
 
 # OpenAI API key
 OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
