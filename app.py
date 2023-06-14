@@ -110,3 +110,5 @@ def run(agent, input_str):
 @cl.langchain_factory
 def factory():
     return agent
+
+run(host="0.0.0.0", port=8000)
