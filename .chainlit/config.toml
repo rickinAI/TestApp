@@ -11,7 +11,7 @@ public = true
 # The project ID (found on https://cloud.chainlit.io).
 # If provided, all the message data will be stored in the cloud.
 # The project ID is required when public is set to false.
-#id = ""
+#id = "RickinAI-zTY6SFuuG24T"
 
 # Whether to enable telemetry (default: true). No personal data is collected.
 enable_telemetry = true
@@ -20,10 +20,10 @@ enable_telemetry = true
 user_env = []
 
 # Hide the chain of thought details from the user in the UI.
-hide_cot = false
+hide_cot = true
 
 # Link to your github repo. This will add a github button in the UI's header.
 # github = ""
 
 # Limit the number of requests per user.
-#request_limit = "10 per day"
+#request_limit = "100 per day"
