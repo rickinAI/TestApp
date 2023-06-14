@@ -12,6 +12,8 @@ from langchain.chat_models import ChatOpenAI
 from langchain.tools import DuckDuckGoSearchRun
 from langchain.utilities import WikipediaAPIWrapper
 
+load_dotenv("api.env")
+
 # OpenAI API key
 OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
 
