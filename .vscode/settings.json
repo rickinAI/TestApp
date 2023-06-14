@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/21460bc4-1502-4ca7-b45a-eac4b493f37f/resourceGroups/RickinAI_group/providers/Microsoft.Web/sites/RickinAI",
+    "appService.deploySubpath": "."
+}
