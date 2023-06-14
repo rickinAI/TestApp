@@ -11,7 +11,7 @@ from langchain.utilities import WikipediaAPIWrapper
 
 
 # Load environment variables from .env file
-load_dotenv("api.env")
+# load_dotenv("api.env")
 
 # Initialize the Flask app
 from flask import Flask
