@@ -9,6 +9,10 @@ from langchain.chat_models import ChatOpenAI
 from langchain.tools import DuckDuckGoSearchRun
 from langchain.utilities import WikipediaAPIWrapper
 
+
+# Load environment variables from .env file
+# load_dotenv("api.env")
+
 # Initialize the Flask app
 from flask import Flask
 app = Flask(__name__)
