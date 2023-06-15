@@ -3,3 +3,6 @@ openai
 langchain==0.0.190
 chainlit==0.2.109
 python-dotenv==1.0.0
+duckduckgo-search
+wikipedia
+```
