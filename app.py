@@ -6,37 +6,19 @@ from langchain.agents import AgentType, Tool, initialize_agent
 from langchain.chains import ConversationChain
 from langchain.chains.conversation.memory import ConversationBufferMemory
 from langchain.chat_models import ChatOpenAI
-from langchain.tools import DuckDuckGoSearchRun
-from langchain.utilities import WikipediaAPIWrapper
+
 
 from flask import Flask
 app = Flask(__name__)
 
 
 # Load environment variables from .env file
-# load_dotenv("api.env")
+load_dotenv("api.env")
 
 # OpenAI API key
 OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
 
 llm = ChatOpenAI(temperature=0, model="gpt-3.5-turbo")
-
-search = DuckDuckGoSearchRun()
-wikipedia = WikipediaAPIWrapper()
-
-# Web Search Tool
-search_tool = Tool(
-    name="Web Search",
-    func=search.run,
-    description="A useful tool for searching the Internet to find information on world events, issues, etc. Worth using for general topics. Use precise questions.",
-)
-
-# Wikipedia Tool
-wikipedia_tool = Tool(
-    name="Wikipedia",
-    func=wikipedia.run,
-    description="A useful tool for searching the Internet to find information on world events, issues, etc. Worth using for general topics. Use precise questions.",
-)
 
 prompt = PromptTemplate(
     template="""Plan: {input}
