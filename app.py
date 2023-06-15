@@ -9,6 +9,9 @@ from langchain.chat_models import ChatOpenAI
 from langchain.tools import DuckDuckGoSearchRun
 from langchain.utilities import WikipediaAPIWrapper
 
+from flask import Flask
+app = Flask(__name__)
+
 
 # Load environment variables from .env file
 # load_dotenv("api.env")
@@ -111,4 +114,4 @@ def run(agent, input_str):
 def factory():
     return agent
 
-run(host="0.0.0.0", port=8000)
+app.run(host="0.0.0.0", port=8000)
