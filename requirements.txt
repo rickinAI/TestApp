@@ -3,6 +3,5 @@ openai
 langchain==0.0.190
 chainlit==0.2.109
 python-dotenv==1.0.0
-pip install --upgrade pip
-pip install duckduckgo-search
-pip install wikipedia
+wikipedia==1.4.0
+duckduckgo_search==3.7.0
